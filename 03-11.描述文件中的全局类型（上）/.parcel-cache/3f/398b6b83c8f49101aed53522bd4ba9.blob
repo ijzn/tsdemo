@@ -1,0 +1,2 @@
+const teacher = 'dell';
+console.log(teacher);

@@ -1,0 +1,20 @@
+class Teacher {
+  constructor(info) {
+    this.info = info;
+  }
+
+  getInfo(key) {
+    if (key === 'name' || key === 'age' || key === 'gender') {
+      return this.info[key];
+    }
+  }
+
+}
+
+const teacher = new Teacher({
+  name: 'dell',
+  age: 18,
+  gender: 'male'
+});
+const test = teacher.getInfo('hello');
+console.log(test);
